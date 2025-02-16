@@ -67,7 +67,20 @@ lazy val dependencies =
     dev.zio.zio,
     dev.zio.`zio-stream`,
     com.github.ghostdogpr.caliban,
-    com.github.ghostdogpr.`caliban-zio-http`
+    com.github.ghostdogpr.`caliban-zio-http`,
+    co.fs2.`fs2-core`,
+    co.fs2.`fs2-io`,
+    co.fs2.`fs2-reactive-streams`,
+    ioq.quill.quill, 
+    org.tpolecat.`doobie-core`,
+    org.tpolecat.`doobie-hikari`,
+    org.tpolecat.`skunk-core`,
+    com.typesafe.slick.slick,
+    com.typesafe.slick.`slick-hikaricp`,
+    com.typesafe.slick.`slick-test`
+
+    
+    
     
 
       // main dependencies

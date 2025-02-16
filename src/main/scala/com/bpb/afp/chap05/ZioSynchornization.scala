@@ -14,7 +14,6 @@ object RefExample extends ZIOAppDefault:
     result <- ref.get
     _   <- ZIO.succeed(println(s"Final count: $result"))
   } yield ()
-
 object PromiseExample extends ZIOAppDefault:
 
  def worker(p: Promise[Nothing, String]): UIO[Boolean] =
@@ -28,7 +27,6 @@ object PromiseExample extends ZIOAppDefault:
     result <- promise.await // Wait for result
     _ <- ZIO.succeed(println(s"Worker Result: $result"))
   } yield ()
-
 object SemaphoreExample extends ZIOAppDefault {
 
   def task(id: Int, semaphore: Semaphore): UIO[Unit] =

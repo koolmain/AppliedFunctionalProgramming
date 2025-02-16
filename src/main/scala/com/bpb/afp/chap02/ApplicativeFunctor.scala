@@ -8,7 +8,7 @@ trait ApplicativeFunctor[F[_]]:
   def map[A, B](fa: F[A])(f: A => B): F[B] =
     ap(pure(f))(fa)
 
-given optionApplicative: ApplicativeFunctor[Option] with
+given optionApplicative: ApplicativeFunctor[Option] :
   def pure[A](value: A): Option[A] = Some(value)
 
   def ap[A, B](ff: Option[A => B])(fa: Option[A]): Option[B] =
