@@ -1,0 +1,1 @@
+This file contains the text which will be read bu ZIO using its error management methods to read the content and handle all other error scenarios.
